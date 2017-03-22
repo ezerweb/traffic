@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ezerweb.ocs.traffic.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/textViewFromTitle1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_from"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewFromLocation1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_address"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewFromTitle1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewToTitle1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_to"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textViewFromLocation1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewToLocation1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_address"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewToTitle1"
+        android:layout_alignParentStart="true" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/textViewDurationTitle1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_durationA"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textViewToLocation1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewDurationTitle2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_durationB"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textViewToLocation1"
+        android:layout_alignEnd="@+id/adViewMain" />
+
+    <TextView
+        android:id="@+id/textViewDurationValue1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text=" 30 Min "
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewDurationTitle1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewDurationValue2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text=" 30 Min "
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewDurationTitle1"
+        android:layout_alignEnd="@+id/adViewMain" />
+
+    <Button
+        android:id="@+id/buttonViewMap1"
+        android:text="View Map"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewDurationValue1"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonViewMap2"
+        android:text="View Map"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewDurationValue1"
+        android:layout_alignEnd="@+id/adViewMain" />
+
+    <Button
+        android:id="@+id/buttonRefresh"
+        android:text="Refresh"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/buttonViewMap2"
+        android:layout_alignEnd="@+id/adViewMain" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>
